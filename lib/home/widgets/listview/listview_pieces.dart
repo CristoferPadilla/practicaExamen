@@ -14,6 +14,7 @@ class ListviewPieces extends StatelessWidget {
         itemCount: pieces.length,
         itemBuilder: (context, index) {
           return ListTile(
+            leading: CircleAvatar(child: Text('${index + 1}')),
             title: Text(pieces[index].name),
             subtitle: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
